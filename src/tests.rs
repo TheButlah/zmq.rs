@@ -13,7 +13,7 @@ async fn test_pub_sub_sockets() {
     tokio::spawn(async move {
         let mut pub_socket = crate::PubSocket::new();
         pub_socket
-            .bind("127.0.0.1:5556")
+            .bind("127.0.0.1:blah")
             .await
             .expect("Failed to bind socket");
 
